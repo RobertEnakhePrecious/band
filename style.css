@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+     /* font-family: "Lato", sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.mob {
+    display: none;
+    background-color: black;
+    padding: 10px 0 .5px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.502);
+}
+
+.mob p a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.mob p a:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.mob .dropdown {
+    position: relative;
+}
+
+.mob .dropdown .dropbtn {
+    float: right;
+    margin-top: -32px;
+    padding: 10px 15px;
+    color: white;
+}
+
+.mob .dropdown .dropbtn:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.mob .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 10px;
+    width: 100%;
+}
+
+.mob .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.mob .dropdown .dropdown-menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+}
+
+.mob .dropdown .dropdown-menu a:hover{
+    background-color: gainsboro;
+    color: black;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.311);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a, nav p a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+nav p {
+    float: right;
+    margin-top: -21.5px;
+}
+
+nav p a:hover {
+    background-color: red;
+}
+
+nav ul .dropdown {
+    position: relative;
+}
+
+nav ul .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 31px;
+}
+
+nav ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul .dropdown:hover .dropbtn {
+    background-color: gainsboro;
+    color: black;
+}
+
+nav ul .dropdown .dropdown-menu a{
+    display: block;
+    color: black;
+}
+
+.hero {
+    position:relative;
+}
+
+.hero img {
+    margin-top: 40px;
+}
+
+.hero .text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 40px;
+    left: 38%;
+}
+
+.hero .text h4 {
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.hero .text p {
+    font-weight: 600;
+}
+
+.band {
+    padding: 80px 20%;
+}
+
+.band h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.band .mid {
+    text-align: center;
+    padding: 20px 0 15px;
+    color: rgba(0, 0, 0, 0.443);
+}
+
+.band p {
+    text-align: justify;
+}
+
+.band .names {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 13%;
+}
+
+.band .names .name p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.band .names .name img {
+    width: 170px;
+    border-radius: 10px;
+}
+
+.tour {
+    padding: 80px 20%;
+    background-color: black;
+}
+
+.tour h1 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.tour .mid {
+    text-align: center;
+    padding: 20px 0 15px;
+    color: rgba(250, 240, 240, 0.443);
+}
+
+.tour .date {
+    padding-top: 20px;
+}
+
+.tour .date p {
+    background-color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.208);
+}
+
+.tour .date p span {
+    background-color: red;
+    color: white;
+    padding: 3px 7px;
+    margin-left: 15px;
+}
+
+.tour .date p .num {
+    background-color: black;
+    float: right;
+    border-radius: 50%;
+    padding: 2px 8px 3px;
+}
+
+.tour .cities, .contact .content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 1%;
+}
+
+.tour .cities .city {
+    width: 260px;
+}
+
+.tour .cities .city img{
+    width: 100%;
+}
+
+.tour .cities .city img:hover{
+    opacity: .7;
+}
+
+.tour .cities .city .text {
+    background-color: white;
+    margin-top: -4px;
+    padding: 20px;
+}
+
+.tour .cities .city .text h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.tour .cities .city .text .mid {
+    text-align: left;
+}
+
+.tour .cities .city .text button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 15px;
+}
+
+.contact {
+    padding: 80px 20%;
+}
+
+.contact h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact .mid {
+    text-align: center;
+    padding: 20px 0 15px;
+    color: rgba(0, 0, 0, 0.443);
+}
+
+.contact .content .add {
+    width: 500px;
+}
+
+.contact .content .add p {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.contact .content .add span {
+    margin-left: 10px;
+}
+
+.contact .content form input{
+    width: 45%;
+    height: 35px;
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+
+.contact .content form .msg{
+    width: 92%;
+}
+
+.contact .content {
+    align-items: flex-start;
+    gap: 30px 0;
+}
+
+.contact .content form button{
+    float: right;
+    margin-right: 27px;
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+    border: none;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer .icons {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5px;
+}
+
+footer .icons p {
+    font-size: 22px;
+}
+
+footer .icons p:hover {
+    opacity: .5;
+}
+
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    color: green;
+}
+
+@media screen and (max-width:768px) {
+    
+    .hero .text {
+        left: 27%;
+    }
+
+    .band, .tour, .contact {
+        padding: 80px 2%;
+    }
+    
+}
+
+@media screen and (max-width:426px) {
+    .mob {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .hero .text {
+        display: none;
+    }
+
+    .band .names, .tour .cities, .contact .content {
+        flex-direction: column;
+    }
+
+    .band .names .name img {
+        width: 230px;
+    }
+
+    .tour .cities .city {
+        width: 100%;
+    }
+
+    .contact .content .add {
+        width: 100%;
+    }
+
+    .contact .content form input, .contact .content form .msg{
+        width: 100%;
+    }
+    
+    .contact .content form button {
+        margin-right: 0;
+    }
+}
+
+
